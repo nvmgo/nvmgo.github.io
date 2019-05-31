@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title>LuaProfiler</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body>
+        <p>#LuaProfiler</p>
+<p>###只需要添加一句代码，就可以对Lua代码中得函数进行效率统计</p>
+<h3 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h3>
+<ul>
+<li>
+<p>将Assets/Scripts下的Nvmgo文件夹复制到项目中</p>
+</li>
+<li>
+<p>然后在C#调用main.lua之前调用<code>[xxlua].DoString(Nvmgo.LuaProfiler.Startup());</code></p>
+</li>
+<li>
+<p>运行项目，打开Windows/Profiler，所有lua函数将显示在里面，名字带有前缀[L]</p>
+<p>调用示例</p>
+<pre><code><div>[xxlua].DoString(Nvmgo.LuaProfiler.Startup());
+[xxlua].DoString(&quot;require('main')&quot;);
+</div></code></pre>
+</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<p>打开Examples/Main.unity, 然后打开Windows/Profiler查看</p>
+<h3 id="%E8%81%94%E7%B3%BB%E6%96%B9%E6%B3%95">联系方法</h3>
+<p>Email：nvmgo@foxmail.com</p>
+
+    </body>
+    </html>
