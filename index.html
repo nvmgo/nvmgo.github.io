@@ -21,8 +21,8 @@
         <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
     </head>
     <body>
-        <p>#LuaProfiler</p>
-<p>###只需要添加一句代码，就可以对Lua代码中得函数进行效率统计</p>
+        <p>LuaProfiler</p>
+<p>只需要添加一句代码，就可以对Lua代码中得函数进行效率统计</p>
 <h3 id="%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">使用方法</h3>
 <ul>
 <li>
@@ -32,7 +32,7 @@
 <p>然后在C#调用main.lua之前调用<code>[xxlua].DoString(Nvmgo.LuaProfiler.Startup());</code></p>
 </li>
 <li>
-<p>运行项目，打开Windows/Profiler，所有lua函数将显示在里面，名字带有前缀[L]</p>
+<p>运行项目，打开Windows/Profiler，所有主要的lua函数将显示在里面，名字带有前缀[L]</p>
 <p>调用示例</p>
 <pre><code><div>[xxlua].DoString(Nvmgo.LuaProfiler.Startup());
 [xxlua].DoString(&quot;require('main')&quot;);
