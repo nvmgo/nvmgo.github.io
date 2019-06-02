@@ -4,7 +4,7 @@ layout: default
 
 # LuaProfiler
 
-## 只需要添加一句代码，就可以对Lua代码中得函数进行效率统计
+### 只需要添加一句代码，就可以对Lua代码中得函数进行效率统计
 
 ### 使用方法
 * 将Assets/Scripts下的Nvmgo文件夹复制到项目中
