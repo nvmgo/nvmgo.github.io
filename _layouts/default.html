@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="author" content="Nvmgo" />
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/screen.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  
+</head>
+<body>
+
+<div class="site">
+  <div class="title">
+    <a href="/">{{ site.title }}</a>
+    <a class="extra" href="/product.html">product</a>
+    <a class="extra" href="/blog.html">blog</a>
+    <a class="extra" href="/about.html">about</a>
+  </div>
+  
+  {{ content }}
+  
+  <div class="footer">
+    © 2019 Nvmgo | Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | <script src="https://s22.cnzz.com/z_stat.php?id=1262192174&web_id=1262192174" language="JavaScript"></script>
+  </div>
+</div>
+
+</body>
+</html>
