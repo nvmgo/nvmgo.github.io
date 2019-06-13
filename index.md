@@ -11,12 +11,12 @@ layout: default
 * Add code: `[xxlua].DoString(Nvmgo.LuaProfiler.Startup());`  before: `[xxlua].DoString("require('main')");` 
 * Run the project, open Windows/Profiler, all the main Lua functions will be displayed inside, the name with a prefix [L]
 
-    [CODE]
+  [CODE]
 
-    ```
-    [xxlua].DoString(Nvmgo.LuaProfiler.Startup());
-    [xxlua].DoString("require('main')");
-    ```
+  ```
+  [xxlua].DoString(Nvmgo.LuaProfiler.Startup());
+  [xxlua].DoString("require('main')");
+  ```
 
 ### [EXAMPLE]
 Open Examples/Main.unity, and then open Windows/Profiler to view
