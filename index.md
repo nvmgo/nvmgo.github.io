@@ -4,23 +4,22 @@ layout: default
 
 # LuaProfiler
 
-### 只需要添加一句代码，就可以对Lua代码中得函数进行效率统计
+### Just add one line, you can profiler the Lua code.
 
-### 使用方法
-* 将Assets/Scripts下的Nvmgo文件夹复制到项目中
-* 然后在C#调用main.lua之前调用`[xxlua].DoString(Nvmgo.LuaProfiler.Startup());`
-* 运行项目，打开Windows/Profiler，所有主要的lua函数将显示在里面，名字带有前缀[L]
-  
-  调用示例
-  
-  ```
-  [xxlua].DoString(Nvmgo.LuaProfiler.Startup());
-  [xxlua].DoString("require('main')");
-  ```
+### [HOW TO USE]
+* Copy the Nvmgo folder under Scripts to the project
+* Add code:`[xxlua].DoString(Nvmgo.LuaProfiler.Startup());` before:`[xxlua].DoString("require('main')");`
+* Run the project, open Windows/Profiler, all the main Lua functions will be displayed inside, the name with a prefix [L]
 
-### Examples
+### [CODE]
 
-打开Examples/Main.unity, 然后打开Windows/Profiler查看
-  
-### 联系方法
-Email：nvmgo@foxmail.com
+```
+[xxlua].DoString(Nvmgo.LuaProfiler.Startup());
+[xxlua].DoString("require('main')");
+```
+
+### [EXAMPLE]
+Open Examples/Main.unity, and then open Windows/Profiler to view
+
+### [CONTACT]
+Email: nvmgo@foxmail.com
