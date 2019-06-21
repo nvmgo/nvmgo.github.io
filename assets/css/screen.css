@@ -17,7 +17,8 @@ html, body {
 
 body {
   background-color: white;
-  font: 13.34px helvetica, arial, clean, sans-serif;
+  font: 16px Microsoft YaHei, arial, clean, sans-serif;
+  /* font : Microsoft YaHei ,SF Pro Display,Roboto,Noto,Arial,PingFang SC,sans-serif; */
   *font-size: small;
   text-align: center;
 }
@@ -97,7 +98,7 @@ ul.posts {
   font-size: 100%;
   text-align: left;
   width: 86%;
-  max-width: 50em;
+  max-width: 60em;
   margin: 0em auto 0em auto;
   line-height: 1.5em;
 }
