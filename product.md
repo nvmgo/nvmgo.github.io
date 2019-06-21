@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
   
 {% for category in site.categories %}

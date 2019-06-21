@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: page
 ---
 
 # 联系方式
-- QQ >> 2761967823
-- Email >> nvmgo@foxmail.com
+* QQ >> 2761967823
+* Email >> nvmgo@foxmail.com
