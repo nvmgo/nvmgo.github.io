@@ -2,7 +2,7 @@
 layout: post
 title: 通过Http调用Unity脚本
 description: ""
-category: Tool
+category: Unity
 ---
 
 以前在做打包时，需要调用Unity写的脚本，调用方式为
